@@ -4,7 +4,9 @@ module.exports = {
         'es2021': true,
         'node': true
     },
-    'extends': 'eslint:recommended',
+    'extends': [
+        'eslint:recommended',
+    ],
     'parserOptions': {
         'ecmaVersion': 12,
         'sourceType': 'module'
@@ -13,7 +15,8 @@ module.exports = {
         'semi': ['error', 'always'],
         'quotes': ['error', 'single'],
         'indent': ['error', 4],
-        'comma-spacing': ['error', {before: false, after: true}]
+        'comma-spacing': ['error', {before: false, after: true}],
+        'no-unused-vars': 'off',
     },
     'parser': 'babel-eslint',
 };
